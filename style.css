@@ -1,0 +1,40 @@
+#page1
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entete
+{
+    width: 100%; /* provisoire */
+    height: 400px; /* provisoire */
+    background: rgb(54, 54, 54); /* provisoire */
+}
+
+.hebergements
+{
+    width: 66.66%; /* provisoire */
+    height: 400px; /* provisoire */
+    background: rgb(255, 0, 0); /* provisoire */
+}
+
+.les_plus_pop
+{
+    width: 33.33%; /* provisoire */
+    height: 400px; /* provisoire */
+    background: rgb(217, 255, 0); /* provisoire */
+}
+
+.activitees
+{
+    width: 100%; /* provisoire */
+    height: 400px; /* provisoire */
+    background: rgb(0, 17, 255); /* provisoire */
+}
+
+.pied_de_page
+{
+    width: 100%; /* provisoire */
+    height: 300px; /* provisoire */
+    background: rgb(66, 40, 0); /* provisoire */
+}
