@@ -1,3 +1,8 @@
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+
 #page1
 {
     display: flex;
@@ -10,12 +15,29 @@
     height: 400px; /* provisoire */
     background: rgb(54, 54, 54); /* provisoire */
 }
-
-.hebergements
+ #menu_nav
+ {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+ }
+.les_hebergements
 {
     width: 66.66%; /* provisoire */
     height: 400px; /* provisoire */
     background: rgb(255, 0, 0); /* provisoire */
+}
+
+.cartes_des_hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.photos_hebergements
+{   
+    width: 20%; /* provisoire */
 }
 
 .les_plus_pop
@@ -25,7 +47,7 @@
     background: rgb(217, 255, 0); /* provisoire */
 }
 
-.activitees
+.les_activitees
 {
     width: 100%; /* provisoire */
     height: 400px; /* provisoire */
