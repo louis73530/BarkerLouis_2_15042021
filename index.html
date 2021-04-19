@@ -14,15 +14,35 @@
         <header class="entete">
             <div class="logo_nav">
                 <ul id="menu_nav">
-                    <div classe="bouton_nav"><li>Hébergements</li></div>
-                    <div classe="bouton_nav"><li>Activités</li></div>
-                    <div classe="bouton_nav"><li>S'inscrire</li></div>
+                    <div class="bouton_nav"><li>Hébergements</li></div>
+                    <div class="bouton_nav"><li>Activités</li></div>
+                    <div class="bouton_nav"><li>S'inscrire</li></div>
                 </ul>
                 <p><img src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo Reservia"></p>
             </div>
-            <form>
-
+            <form method="post" action="traitement.php"> <!-- "traite" est une page imaginaire -->
+                <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+                <p>En plein centre ville ou en pleine nature</p> <!-- revoir si je mets le <h> et <p> hors du <form> -->
+                <div class="barre_de_recherche">
+                    <img class="map_marker" src="icones/mapmarker.svg" alt="icone map marker" />
+                    <input type="text" name="ville" value="Marseille, France"/> <!-- type="text" ou "search"?-->
+                    <input class="bouton_recherche" type="submit" value="Rechercher" />
+                </div>
             </form>
+            <div id="filtres">
+                <h3>Filtres</h3>
+                    <ul>
+                        <li><img class="icones" src="icones/bill.svg" alt="logo d'un billet"/><p>Économique</p></li>
+                        <li><img class="icones" src="icones/child.svg" alt="logo d'un enfant"/><p>Familial</p></li>
+                        <li><img class="icones" src="icones/heart.svg" alt="logo d'un coeur"/><p>Romantique</p></li>
+                        <li><img class="icones" src="icones/dog.svg" alt="logo d'un chien"/><p>Animaux autorisés</p></li>
+                    </ul>
+            </div>
+            <div>
+                <img src="icones/info.svg" alt="logo d'onformation" />
+                <p>Plus de 500 logements dans cette ville</p>
+
+            </div>
         </header>
         
         <section class="les_hebergements">
