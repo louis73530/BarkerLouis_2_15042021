@@ -15,12 +15,50 @@
     height: 400px; /* provisoire */
     background: rgb(54, 54, 54); /* provisoire */
 }
- #menu_nav
- {
+.logo_nav
+{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+}
+.menu_nav
+{
+    display: flex;
+    list-style-type: none;
+}
+.map_marker
+{
+    width: 10px; /* provisoire */
+}
+.filtres
+{
+    display: flex;
+}
+.les_boutons_filtres
+{
+    display: flex;
+    list-style-type: none;
+}
+.bouton_filtres
+{
+    display: flex;
+}
+.icones_filtres
+{
+    width: 10px; /* provisoire */
+}
+.i_500_logements
+{
     display: flex;
     flex-direction: row;
-    list-style-type: none;
- }
+}
+.logo_i
+{
+    width: 5px; /* provisoire */
+    border: solid black;
+    border-radius: 100%; /* provisoire */
+}
 .les_hebergements
 {
     width: 66.66%; /* provisoire */
