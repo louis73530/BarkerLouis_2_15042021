@@ -21,39 +21,128 @@
     flex-direction: row;
     list-style-type: none;
  }
-.les_hebergements
-{
-    width: 66.66%; /* provisoire */
-    height: 400px; /* provisoire */
-    background: rgb(255, 0, 0); /* provisoire */
-}
 
-.cartes_des_hebergements
+
+                                /* ----- Section1, Hébergements à Marseille ----- */
+
+
+.les_hebergements
 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    max-width: 66.66%; /* provisoire */
+    min-width: 260px; /* provisoire */
+    background: #F2F2F2;
+    border-radius: 10px; /* provisoire */
 }
-
+.cartes_des_hebergements
+{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.carte
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;/* provisoire */
+    min-width: 250px;
+    max-width: 30%; /* provisoire */
+    height: 200px; /* provisoire */
+}
 .photos_hebergements
 {   
-    width: 20%; /* provisoire */
+    margin: 3px 3px 0px 3px; /* provisoire */
+    width: 98%; /* provisoire */
+    height: 100px; /* provisoire */
+    border-top-left-radius: 10px; /* provisoire */
+    border-top-right-radius: 10px; /* provisoire */
 }
+
+
+                                /* ----- Section2, Les plus populaires -----*/
+
 
 .les_plus_pop
 {
-    width: 33.33%; /* provisoire */
-    height: 400px; /* provisoire */
-    background: rgb(217, 255, 0); /* provisoire */
+    max-width: 33.33%; /* provisoire */
+    min-width: 260px; /* provisoire */
+    height: 500px; /* provisoire */
+    background: #F2F2F2;
+    border-radius: 10px; /* provisoire */
+}
+.icone_chartline
+{
+    width: 20px; /* provisoire */
+}
+.les_plus_pop_icone
+{
+    display: flex;
+    justify-content: space-between;
+}
+.photos_les_plus_pop
+{
+    margin: 3px 3px 0px 3px; /* provisoire */
+    width: 120px; /* provisoire */
+    height: 100px; /* provisoire */
+    border-top-left-radius: 10px; /* provisoire */
+    border-bottom-left-radius: 10px; /* provisoire */
+}
+.nom_prix_note
+{
+    display: flex;
+    flex-direction: column;
+}
+.cartes_des_plus_pop
+{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.carte2
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;/* provisoire */
+    width: 80%; /* provisoire */
+    height: 100px; /* provisoire */
 }
 
-.les_activitees
+                                /* ----- Section3, Activités a Marseille ----- */
+
+
+.les_activites
 {
     width: 100%; /* provisoire */
-    height: 400px; /* provisoire */
-    background: rgb(0, 17, 255); /* provisoire */
 }
+.cartes_des_activites
+{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.carte3
+{
+    width: 25%; /* provisoire */
+    border-radius: 10px; /* provisoire */
+    box-shadow: #F2F2f2 0px 5px 5px 0px; /* provisoire */
 
+}
+.photos_activites
+{
+    width: 100%; /* provisoire */
+    border-top-left-radius: 10px; /* provisoire */
+    border-top-right-radius: 10px; /* provisoire */
+}
 .pied_de_page
 {
     width: 100%; /* provisoire */
