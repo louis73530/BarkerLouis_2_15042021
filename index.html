@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42f5df73fd.js" crossorigin="anonymous"></script>
     <title>Réservia</title>
 </head>
 <body>
@@ -14,17 +15,23 @@
         <header class="entete">
             <div class="logo_nav">
                 <ul class="menu_nav">
-                    <div class="bouton_nav"><li>Hébergements</li></div>
-                    <div class="bouton_nav"><li>Activités</li></div>
-                    <div class="bouton_nav"><li>S'inscrire</li></div>
+                    <div class="bouton_nav">
+                        <li><a href="#hebergements">Hébergements</a></li> <!--faire le lien avec h2 section-->
+                    </div>
+                    <div class="bouton_nav">
+                        <li><a href="#activites">Activités</a></li> <!--faire le lien avec h2 section-->
+                    </div>
+                    <div class="bouton_nav">
+                        <li><a href="empty">S'inscrire</a></li>
+                    </div>
                 </ul>
                 <p><img src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo Reservia"></p>
             </div>
-            <form method="post" action="traitement.php"> <!-- "traite" est une page imaginaire -->
+            <form method="post" action="traitement.php"> <!-- "traitement" est une page imaginaire -->
                 <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
                 <p>En plein centre ville ou en pleine nature</p> <!-- revoir si je mets le <h> et <p> hors du <form> -->
                 <div class="barre_de_recherche">
-                    <img class="map_marker" src="icones/mapmarker.svg" alt="icone map marker" />
+                    <i class="fas fa-map-marker-alt"></i>
                     <input type="text" name="ville" value="Marseille, France"/> <!-- type="text" ou "search"?-->
                     <input class="bouton_recherche" type="submit" value="Rechercher" />
                 </div>
@@ -32,14 +39,42 @@
             <div class="filtres">
                 <h3>Filtres</h3>
                     <ul class="les_boutons_filtres">
-                        <li class="bouton_filtres"><img class="icones_filtres" src="icones/bill.svg" alt="logo d'un billet"/><p>Économique</p></li>
-                        <li class="bouton_filtres"><img class="icones_filtres" src="icones/child.svg" alt="logo d'un enfant"/><p>Familial</p></li>
-                        <li class="bouton_filtres"><img class="icones_filtres" src="icones/heart.svg" alt="logo d'un coeur"/><p>Romantique</p></li>
-                        <li class="bouton_filtres"><img class="icones_filtres" src="icones/dog.svg" alt="logo d'un chien"/><p>Animaux autorisés</p></li>
+                        <a href="empty">
+                            <li class="bouton_filtres">
+                                <div class="icone_filtre">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <p>Économique</p>
+                            </li>
+                        </a>
+                        <a href="empty">
+                            <li class="bouton_filtres">
+                                <div class="icone_filtre">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                <p>Familial</p>
+                            </li>
+                        </a>
+                        <a href="empty">
+                            <li class="bouton_filtres">
+                                <div class="icone_filtre">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <p>Romantique</p>
+                            </li>
+                        </a>
+                        <a href="empty">
+                            <li class="bouton_filtres">
+                                <div class="icone_filtre">
+                                    <i class="fas fa-dog"></i>
+                                </div>
+                                <p>Animaux autorisés</p>
+                            </li>
+                        </a>
                     </ul>
             </div>
             <div class="i_500_logements">
-                <img class="logo_i" src="icones/info.svg" alt="logo d'onformation" />
+                <i class="fas fa-info"></i>
                 <p>Plus de 500 logements dans cette ville</p>
             </div>
         </header>

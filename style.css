@@ -9,11 +9,13 @@
     flex-wrap: wrap;
 }
 
+                                /* -----           Header           ----- */
+                                
+
 .entete
 {
     width: 100%; /* provisoire */
     height: 400px; /* provisoire */
-    background: rgb(54, 54, 54); /* provisoire */
 }
 .logo_nav
 {
@@ -24,12 +26,11 @@
 }
 .menu_nav
 {
+    width: 25%; /* provisoire */
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     list-style-type: none;
-}
-.map_marker
-{
-    width: 10px; /* provisoire */
 }
 .filtres
 {
@@ -37,27 +38,21 @@
 }
 .les_boutons_filtres
 {
+    width: 66%; /* provisoire */
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
 }
 .bouton_filtres
 {
     display: flex;
-}
-.icones_filtres
-{
-    width: 10px; /* provisoire */
+    align-items: baseline;
+    text-decoration-style: none;
 }
 .i_500_logements
 {
     display: flex;
-    flex-direction: row;
-}
-.logo_i
-{
-    width: 5px; /* provisoire */
-    border: solid black;
-    border-radius: 100%; /* provisoire */
+    align-items: baseline;
 }
 .les_hebergements
 {
