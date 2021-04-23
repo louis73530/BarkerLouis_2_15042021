@@ -6,7 +6,10 @@
 #page1
 {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .entete
@@ -23,45 +26,85 @@
  }
 
 
-                                /* ----- Section1, Hébergements à Marseille ----- */
+                                /* ----------------- Sections ----------------- */
 
+
+
+
+h2
+{
+    font-size: 16px;
+    margin-top: 47px;
+    margin-left: 40px;
+    margin-bottom: 28px;
+}
+h3
+{
+    font-size: 12px;
+    font-weight: 900;
+}
+.en_gras
+{
+    font-weight: 900;
+}
+.nom_prix_note, p
+{
+    font-size: 10px;
+}
+.nom_prix_note
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 16px;
+}
+.etoiles
+{
+    display: flex;
+}
+
+                                /* ----- Section1, Hébergements à Marseille ----- */
 
 .les_hebergements
 {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 66.66%; /* provisoire */
-    min-width: 260px; /* provisoire */
+    width: 880px;
+    height: 626px;
     background: #F2F2F2;
-    border-radius: 10px; /* provisoire */
+    border-radius: 20px;
 }
 .cartes_des_hebergements
 {
     display: flex;
-    align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .carte
 {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;/* provisoire */
-    min-width: 250px;
-    max-width: 30%; /* provisoire */
-    height: 200px; /* provisoire */
+    border-radius: 20px;
+    width: 246px;
+    height: 200px;
+    margin-bottom: 30px;
 }
 .photos_hebergements
 {   
-    margin: 3px 3px 0px 3px; /* provisoire */
-    width: 98%; /* provisoire */
-    height: 100px; /* provisoire */
-    border-top-left-radius: 10px; /* provisoire */
-    border-top-right-radius: 10px; /* provisoire */
+    margin: 5px 5px 0px 5px;
+    width: 236px;
+    height: 114px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.afficher_plus
+{
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
 }
 
 
@@ -70,50 +113,42 @@
 
 .les_plus_pop
 {
-    max-width: 33.33%; /* provisoire */
-    min-width: 260px; /* provisoire */
-    height: 500px; /* provisoire */
+    width: 420px;
+    height: 626px;
     background: #F2F2F2;
-    border-radius: 10px; /* provisoire */
+    border-radius: 20px;
 }
-.icone_chartline
-{
-    width: 20px; /* provisoire */
-}
+
 .les_plus_pop_icone
 {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    margin-right: 40px;
 }
 .photos_les_plus_pop
 {
-    margin: 3px 3px 0px 3px; /* provisoire */
-    width: 120px; /* provisoire */
-    height: 100px; /* provisoire */
-    border-top-left-radius: 10px; /* provisoire */
-    border-bottom-left-radius: 10px; /* provisoire */
-}
-.nom_prix_note
-{
-    display: flex;
-    flex-direction: column;
+    margin: 5px 0px 5px 5px;
+    width: 127px;
+    height: 134px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .cartes_des_plus_pop
 {
     display: flex;
-    align-content: space-around;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
     flex-wrap: wrap;
 }
 .carte2
 {
     display: flex;
-    align-content: center;
-    align-items: center;
+    width: 343px;
+    height: 144px;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;/* provisoire */
-    width: 80%; /* provisoire */
-    height: 100px; /* provisoire */
+    border-radius: 20px;
+    margin-bottom: 28px;
 }
 
                                 /* ----- Section3, Activités a Marseille ----- */
@@ -121,7 +156,7 @@
 
 .les_activites
 {
-    width: 100%; /* provisoire */
+    width: 1340px; /* provisoire */
 }
 .cartes_des_activites
 {
@@ -132,16 +167,16 @@
 }
 .carte3
 {
-    width: 25%; /* provisoire */
-    border-radius: 10px; /* provisoire */
-    box-shadow: #F2F2f2 0px 5px 5px 0px; /* provisoire */
+    width: 302px;
+    border-radius: 10px;
+    box-shadow: black ;
 
 }
 .photos_activites
 {
     width: 100%; /* provisoire */
-    border-top-left-radius: 10px; /* provisoire */
-    border-top-right-radius: 10px; /* provisoire */
+    border-top-left-radius: 20px; /* provisoire */
+    border-top-right-radius: 20px; /* provisoire */
 }
 .pied_de_page
 {
