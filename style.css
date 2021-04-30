@@ -3,22 +3,23 @@
     font-family: 'Raleway', sans-serif;
 }
 
-#page1
+#header_sections
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
 }
 
-                                /* -----           Header           ----- */
+/* ----- Header ----- */
                                 
 
 .entete
 {
     width: 100%; /* provisoire */
-    height: 400px; /* provisoire */
+    display: flex;
+    flex-direction: column;
 }
 .logo_nav
 {
@@ -27,76 +28,158 @@
     width: 100%;
     justify-content: space-between;
 }
-.menu_nav
+.les_boutons_nav
 {
-    width: 25%; /* provisoire */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     list-style-type: none;
+}
+.les_boutons_nav a
+{
+    text-decoration: none;
+    color: black;
+}
+h1
+{
+    font-size: 22px;
+    font-weight: 900;
+}
+.barre_de_recherche
+{
+    display: flex;
+}
+.barre_de_recherche i
+{
+    background-color: #F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.btn_recherche
+{
+    color: white;
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 135px;
+    height: 50px;
+}
+input /* provisoire */
+{
+    border: none; /* provisoire */
+    font-size: 16px; /* provisoire */
 }
 .filtres
 {
     display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.filtres h3
+{
+    font-size: 16px; /* provisoire */
 }
 .les_boutons_filtres
 {
-    width: 66%; /* provisoire */
+    width: 66%;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
-.bouton_filtres
+.les_boutons_filtres p
+{
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 10px; /* provisoire */
+}
+.les_boutons_filtres a
 {
     display: flex;
-    align-items: baseline;
-    text-decoration-style: none;
+    align-items: center;
+    border: solid #F2F2F2 2px;
+    border-radius: 30px;
+    padding-right: 15px; /* provisoire */
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+.icone_filtre
+{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: #0065FC;
+    background: #DEEBFF;
+    padding: 12px;
+    border-radius: 30px;
+}
+.bouton_filtres:hover
+{
+    color: #0065FC;
+    background-color: #F2F2F2;
 }
 .i_500_logements
 {
     display: flex;
     align-items: baseline;
 }
+.fa-info
+{
+    color: #0065FC;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: solid #F2F2F2 2px; /* le border doit être un cercle */
+    border-radius: 30px;
+    margin-right: 10px;
+}
 
 
-                                /* ----------------- Sections ----------------- */
-
-
+/* ----- Sections ----- */
 
 
 h2
 {
-    font-size: 16px;
+    font-size: 22px; 
     margin-top: 47px;
     margin-left: 40px;
     margin-bottom: 28px;
 }
-h3
+
+strong
+{
+    font-weight: 900;
+}
+.nom_prix_note h3
+{
+    font-size: 14px;
+}
+.nom_prix_note p
 {
     font-size: 12px;
-    font-weight: 900;
-}
-.en_gras
-{
-    font-weight: 900;
-}
-.nom_prix_note, p
-{
-    font-size: 10px;
 }
 .nom_prix_note
 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin-left: 16px;
+    line-height: 0.5em; /* provisoire */
 }
 .etoiles
 {
     display: flex;
+    color: #0065FC;
+}
+.gris
+{
+    color: #F2F2F2;
 }
 
-                                /* ----- Section1, Hébergements à Marseille ----- */
+/* ----- Section1, Hébergements à Marseille ----- */
 
 .les_hebergements
 {
@@ -123,13 +206,19 @@ h3
     height: 200px;
     margin-bottom: 30px;
 }
+.carte a
+{
+    text-decoration: none;
+    color: black;
+}
 .photos_hebergements
 {   
     margin: 5px 5px 0px 5px;
     width: 236px;
     height: 114px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover; /* découverte du siècle */
 }
 .afficher_plus
 {
@@ -141,7 +230,7 @@ h3
 }
 
 
-                                /* ----- Section2, Les plus populaires -----*/
+/* ----- Section2, Les plus populaires -----*/
 
 
 .les_plus_pop
@@ -164,8 +253,9 @@ h3
     margin: 5px 0px 5px 5px;
     width: 127px;
     height: 134px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
 }
 .cartes_des_plus_pop
 {
@@ -184,7 +274,7 @@ h3
     margin-bottom: 28px;
 }
 
-                                /* ----- Section3, Activités a Marseille ----- */
+/* ----- Section3, Activités a Marseille ----- */
 
 
 .les_activites
@@ -194,36 +284,84 @@ h3
 .cartes_des_activites
 {
     display: flex;
-    align-content: space-around;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 .carte3
 {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 1px 1px;
     width: 302px;
-    border-radius: 10px;
-    box-shadow: black ;
-
+    height: 100%;
+}
+.carte3 h3
+{
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 900;
 }
 .photos_activites
 {
-    width: 100%; /* provisoire */
-    border-top-left-radius: 20px; /* provisoire */
-    border-top-right-radius: 20px; /* provisoire */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 302px;
+    object-fit: cover;
 }
-.pied_de_page
+.photo_act_1
+{
+    height: 390px;
+}
+.photo_act_2
+{
+    height: 180px;
+}
+.photo_act_3
+{
+    height: 110px;
+}
+.photo_act_4
+{
+    height: 390px;
+}
+.photo_act_5
+{
+    height: 140px;
+}
+.photo_act_6
+{
+    height: 155px;
+}
+footer
 {
     width: 100%;
     height: 218px;
     background: #F2F2F2;
-    display: flex;
 }
-.listes_footer
+.les_listes_footer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+.liste_footer
 {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
+    margin-top: 30px;
 }
-.boutons_footer
+.liste_footer h3
+{
+    margin-left: 40px;
+    margin-bottom: -5px;
+}
+.liste_footer ul
 {
     list-style-type: none;
+    line-height: 1.8em;
+
+}
+.liste_footer a
+{
+    text-decoration: none;
+    color: black;
 }
