@@ -5,12 +5,11 @@
 
 #header_sections
 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
     padding-left: 4.5%;
     padding-right: 4.5%;
 }
+
 
 /* ----- Header ----- */
                                 
@@ -28,16 +27,31 @@
     width: 100%;
     justify-content: space-between;
 }
-.les_boutons_nav
+.logo_nav nav
 {
+    padding-top: 30px;
+}
+.btn_nav
+{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style-type: none;
 }
-.les_boutons_nav a
+.btn_nav a
 {
     text-decoration: none;
-    color: black;
+}
+.inscription
+{
+    font-weight: 900;
+    color: #0065FC;
+}
+.btn_nav a:hover
+{
+    text-decoration: overline;
+    text-decoration-color: #0065FC;
 }
 h1
 {
@@ -50,12 +64,14 @@ h1
 }
 .barre_de_recherche i
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    width: 50px;
     height: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
 
 }
 .btn_recherche
@@ -67,10 +83,10 @@ h1
     width: 135px;
     height: 50px;
 }
-input /* provisoire */
+input
 {
-    border: none; /* provisoire */
-    font-size: 16px; /* provisoire */
+    border: #F2F2F2 solid 1px;
+    font-size: 16px;
 }
 .filtres
 {
@@ -83,72 +99,83 @@ input /* provisoire */
 {
     font-size: 16px; /* provisoire */
 }
-.les_boutons_filtres
+.les_btn_filtres
 {
     width: 66%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
 }
-.les_boutons_filtres p
+.les_btn_filtres p
 {
     font-size: 16px;
     text-decoration: none;
     margin-left: 10px; /* provisoire */
 }
-.les_boutons_filtres a
+.les_btn_filtres a
 {
     display: flex;
     align-items: center;
     border: solid #F2F2F2 2px;
     border-radius: 30px;
     padding-right: 15px; /* provisoire */
-    height: 40px;
+    height: 42px;
     text-decoration: none;
     color: black;
     font-weight: 900;
 }
-.icone_filtre
+.btn_filtres i
 {
     display: flex;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    align-items: center;
     color: #0065FC;
     background: #DEEBFF;
-    padding: 12px;
     border-radius: 30px;
+    width: 45px;
+    height: 45px;
+    margin-left: -2px;
 }
-.bouton_filtres:hover
+.btn_filtres:hover
 {
     color: #0065FC;
     background-color: #F2F2F2;
+    box-shadow: 0 0 10px #d6d6d6;
 }
 .i_500_logements
 {
     display: flex;
     align-items: baseline;
 }
-.fa-info
+.i_500_logements i
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #0065FC;
-    width: 10px;
-    height: 10px;
-    padding: 10px;
-    border: solid #F2F2F2 2px; /* le border doit être un cercle */
+    width: 25px;
+    height: 25px;
+    border: solid #F2F2F2 2px;
     border-radius: 30px;
     margin-right: 10px;
+    font-size: 15px;
 }
 
 
 /* ----- Sections ----- */
 
 
+main
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 h2
 {
     font-size: 22px; 
     margin-top: 47px;
-    margin-left: 40px;
     margin-bottom: 28px;
 }
 
@@ -163,30 +190,40 @@ strong
 .nom_prix_note p
 {
     font-size: 12px;
+    line-height: 0.5;
 }
 .nom_prix_note
 {
     margin-left: 16px;
-    line-height: 0.5em; /* provisoire */
 }
 .etoiles
 {
     display: flex;
+    flex-direction: row;
+}
+.fa-star
+{
+    font-size: 12px; /* provisoire */
     color: #0065FC;
 }
-.gris
+.grise
 {
     color: #F2F2F2;
 }
 
+
 /* ----- Section1, Hébergements à Marseille ----- */
+
 
 .les_hebergements
 {
     width: 880px;
-    height: 626px;
     background: #F2F2F2;
     border-radius: 20px;
+}
+.les_hebergements h2,.les_plus_pop h2
+{
+    margin-left: 40px;
 }
 .cartes_des_hebergements
 {
@@ -198,13 +235,12 @@ strong
 }
 .carte
 {
-    display: flex;
-    flex-direction: column;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     width: 246px;
     height: 200px;
     margin-bottom: 30px;
+    box-shadow: 0 0 10px #b9b9b9;
 }
 .carte a
 {
@@ -213,7 +249,7 @@ strong
 }
 .photos_hebergements
 {   
-    margin: 5px 5px 0px 5px;
+    margin: 5px 5px -7px 5px; /* provisoire */
     width: 236px;
     height: 114px;
     border-top-left-radius: 15px;
@@ -222,9 +258,9 @@ strong
 }
 .afficher_plus
 {
-    margin-left: 40px;
+    margin-left: 50px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     color: black;
 }
@@ -236,12 +272,10 @@ strong
 .les_plus_pop
 {
     width: 420px;
-    height: 626px;
     background: #F2F2F2;
     border-radius: 20px;
 }
-
-.les_plus_pop_icone
+.les_plus_pop_icone /* titre + icone */
 {
     display: flex;
     justify-content: space-between;
@@ -264,7 +298,7 @@ strong
     align-content: center;
     flex-wrap: wrap;
 }
-.carte2
+.carte2 a
 {
     display: flex;
     width: 343px;
@@ -272,25 +306,31 @@ strong
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-bottom: 28px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 10px #b9b9b9;
 }
+
 
 /* ----- Section3, Activités a Marseille ----- */
 
 
-.les_activites
-{
-    width: 1340px; /* provisoire */
-}
 .cartes_des_activites
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cartes_des_activites a
+{
+    text-decoration: none;
+    color: black;
 }
 .carte3
 {
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 1px 1px;
-    width: 302px;
+    box-shadow: 0 0 10px #b9b9b9;
+    min-width: 100%;
     height: 100%;
 }
 .carte3 h3
@@ -299,11 +339,26 @@ strong
     font-size: 14px;
     font-weight: 900;
 }
+.act_col_1
+{
+    width: 22%;
+}
+.act_col_2_4
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+}
+.act_col_3
+{
+    width: 22%;
+}
 .photos_activites
 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 302px;
+    width: 100%;
     object-fit: cover;
 }
 .photo_act_1
@@ -333,13 +388,14 @@ strong
 footer
 {
     width: 100%;
-    height: 218px;
+    margin-top: 50px;
     background: #F2F2F2;
 }
 .les_listes_footer
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 75%;
 }
 .liste_footer
@@ -364,4 +420,42 @@ footer
 {
     text-decoration: none;
     color: black;
+}
+
+/* ----- Media queries -----*/
+
+
+@media screen and (max-width: 768px)
+{
+    #header_sections
+    {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .logo_nav
+    {
+        display: none; /* provisoire */
+    }
+    .cartes_des_activites
+    {
+        display: none; /* provisoire */
+    }
+    .les_hebergements
+    {
+        width: auto; /* provisoire */
+        background: none;
+    }
+    .cartes_des_hebergements
+    {
+        justify-content: center;
+    }
+    .les_plus_pop
+    {
+        order: -1;
+        border-radius: 0px;
+    }
+    .liste_footer
+    {
+        flex-direction: column;
+    }
 }
