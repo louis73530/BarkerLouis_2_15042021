@@ -5,7 +5,6 @@
 
 #header_sections
 {
-
     padding-left: 4.5%;
     padding-right: 4.5%;
 }
@@ -23,40 +22,45 @@
 .logo_nav
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
-    width: 100%;
     justify-content: space-between;
-}
-.logo_nav nav
-{
-    padding-top: 30px;
+    align-items: center;
 }
 .btn_nav
 {
-    width: 100%;
+    width: 340px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
 }
 .btn_nav a
 {
     text-decoration: none;
+    color: black;
+    width: 105px;
+    padding: 15px;
 }
-.inscription
+.btn_inscription a
 {
     font-weight: 900;
     color: #0065FC;
 }
-.btn_nav a:hover
+.btn_hebergements_activites a:hover
 {
-    text-decoration: overline;
-    text-decoration-color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 25px;
+    color: #0065FC;
 }
 h1
 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 900;
+    margin-bottom: -10px;
+}
+h1 + p
+{
+    font-size: 16px;
 }
 .barre_de_recherche
 {
@@ -72,7 +76,6 @@ h1
     border-bottom-left-radius: 10px;
     width: 50px;
     height: 50px;
-
 }
 .btn_recherche
 {
@@ -88,6 +91,10 @@ input
     border: #F2F2F2 solid 1px;
     font-size: 16px;
 }
+.texte_recherche
+{
+    padding-left: 15px;
+}
 .filtres
 {
     display: flex;
@@ -101,11 +108,11 @@ input
 }
 .les_btn_filtres
 {
-    width: 66%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
+    width: 60%;
 }
 .les_btn_filtres p
 {
@@ -119,11 +126,15 @@ input
     align-items: center;
     border: solid #F2F2F2 2px;
     border-radius: 30px;
-    padding-right: 15px; /* provisoire */
+    padding-right: 15px;
     height: 42px;
     text-decoration: none;
     color: black;
     font-weight: 900;
+}
+.btn_filtres
+{
+    /* provisoire *//* provisoire *//* provisoire */
 }
 .btn_filtres i
 {
@@ -195,6 +206,9 @@ strong
 .nom_prix_note
 {
     margin-left: 16px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .etoiles
 {
@@ -254,7 +268,7 @@ strong
     height: 114px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    object-fit: cover; /* découverte du siècle */
+    object-fit: cover;
 }
 .afficher_plus
 {
@@ -298,6 +312,7 @@ strong
     align-content: center;
     flex-wrap: wrap;
 }
+
 .carte2 a
 {
     display: flex;
@@ -309,6 +324,12 @@ strong
     text-decoration: none;
     color: black;
     box-shadow: 0 0 10px #b9b9b9;
+}
+.carte2 .nom_prix_note
+{
+    
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 
@@ -330,7 +351,6 @@ strong
 {
     border-radius: 20px;
     box-shadow: 0 0 10px #b9b9b9;
-    min-width: 100%;
     height: 100%;
 }
 .carte3 h3
@@ -425,6 +445,8 @@ footer
 /* ----- Media queries -----*/
 
 
+
+
 @media screen and (max-width: 768px)
 {
     #header_sections
@@ -432,14 +454,61 @@ footer
         padding-left: 0%;
         padding-right: 0%;
     }
-    .logo_nav
+
+
+/* ----- Header ----- */
+
+
+    .entete
     {
-        display: none; /* provisoire */
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .cartes_des_activites
+    .btn_nav
     {
-        display: none; /* provisoire */
+        display: flex;
+        flex-direction: row-reverse;
     }
+    .btn_recherche
+    {
+        display: none;
+    }
+    .filtres
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline; /* provisoire */
+    }
+    .les_btn_filtres
+    {
+        width: auto;
+        margin-top: 0px;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+    .btn_filtres
+    {
+        margin-bottom: 10px;
+        margin-right: 15px;
+    }
+
+
+/* ----- Sections ----- */
+    
+
+    .les_plus_pop h2, .les_hebergements h2, .les_activites h2
+    {
+        margin-left: 10px;
+    }
+    
+    
+    .les_plus_pop
+    {
+        order: -1;
+        border-radius: 0px;
+    }
+    
+    
     .les_hebergements
     {
         width: auto; /* provisoire */
@@ -447,13 +516,48 @@ footer
     }
     .cartes_des_hebergements
     {
+        margin-left: 0px;
+        margin-right: 0px;
         justify-content: center;
     }
-    .les_plus_pop
+    .carte
     {
-        order: -1;
-        border-radius: 0px;
+        width: 343px;
     }
+    .photos_hebergements
+    {
+        width: 333px;
+    }
+
+
+
+
+    .les_activites h2
+    {
+        margin-bottom: 0px;
+    }
+    .cartes_des_activites
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .carte3
+    {
+        width: 343px;
+        height: 194px;
+        margin-top: 30px;
+    }
+    .photos_activites
+    {
+        height: 150px;
+    }
+    
+    
+
+
+    /* ----- Footer ----- */
+
+
     .liste_footer
     {
         flex-direction: column;
