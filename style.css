@@ -5,8 +5,8 @@
 
 #header_sections
 {
-    padding-left: 4.5%;
-    padding-right: 4.5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 
@@ -15,7 +15,7 @@
 
 .entete
 {
-    width: 100%; /* provisoire */
+    width: auto; /* provisoire */
     display: flex;
     flex-direction: column;
 }
@@ -66,7 +66,7 @@ h1 + p
 {
     display: flex;
 }
-.barre_de_recherche i
+.barre_de_recherche .fa-map-marker-alt
 {
     display: flex;
     justify-content: center;
@@ -85,6 +85,10 @@ h1 + p
     border-bottom-right-radius: 10px;
     width: 135px;
     height: 50px;
+}
+.btn_loupe
+{
+    display: none;
 }
 input
 {
@@ -182,6 +186,7 @@ main
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: auto;
 }
 h2
 {
@@ -205,10 +210,12 @@ strong
 }
 .nom_prix_note
 {
-    margin-left: 16px;
-    margin-right: 40px;
+    margin-left: 16px; /* provisoire */
+    margin-right: 40px; /* provisoire */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 .etoiles
 {
@@ -231,29 +238,33 @@ strong
 
 .les_hebergements
 {
-    width: 880px;
+    width: 65%;
     background: #F2F2F2;
     border-radius: 20px;
+    margin-bottom: 5px;
 }
 .les_hebergements h2,.les_plus_pop h2
 {
-    margin-left: 40px;
+    margin-left: 40px; /* peut-etre a ajuster au cas par cas selon le conteneur */
 }
 .cartes_des_hebergements
 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 4.545455%; /* 40px/880px */ /* provisoire */
+    margin-right: 4.545455%; /* 40px/880px */ /* provisoire */
 }
 .carte
 {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    width: 246px;
-    height: 200px;
-    margin-bottom: 30px;
+    min-width: 246px;
+    width: 27.954545%; /* 246px/880px */
+    height: 31.948882%; /* 200px/626px */
+    margin-bottom: 4.792332%; /* 30px/626px */
+    margin-left: 5px;
+    margin-right: 5px;
     box-shadow: 0 0 10px #b9b9b9;
 }
 .carte a
@@ -263,8 +274,9 @@ strong
 }
 .photos_hebergements
 {   
-    margin: 5px 5px -7px 5px; /* provisoire */
-    width: 236px;
+    margin: 5px 5px -7px 5px; /* provisoire *//* provisoire *//* provisoire */
+    width: 95.934959%; /* 236px/246px */
+    min-width: 236px;
     height: 114px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -272,7 +284,7 @@ strong
 }
 .afficher_plus
 {
-    margin-left: 50px;
+    margin-left: 5.681818%; /* 50px/880px */
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
@@ -285,21 +297,24 @@ strong
 
 .les_plus_pop
 {
-    width: 420px;
+    width: 32%;
+    min-width: 420px;
     background: #F2F2F2;
     border-radius: 20px;
+    margin-bottom: 5px;
 }
 .les_plus_pop_icone /* titre + icone */
 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-right: 40px;
+    margin-right: 9.52381%; /* 40px/420px */
 }
 .photos_les_plus_pop
 {
-    margin: 5px 0px 5px 5px;
-    width: 127px;
+    margin: 5px 0px 5px 5px; /* provisoire */
+    min-width: 127px;
+    width: 37.026239%; /* 127px/343px */
     height: 134px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -309,27 +324,26 @@ strong
 {
     display: flex;
     flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
 }
 
+.carte2
+{
+    display: flex;
+    justify-content: center;
+}
 .carte2 a
 {
     display: flex;
-    width: 343px;
-    height: 144px;
+    min-width: 343px;
+    width: 81.666667%; /* 343px/420px */
+    height: 23.003195%; /* 144px/626px */
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-bottom: 28px;
     text-decoration: none;
     color: black;
     box-shadow: 0 0 10px #b9b9b9;
-}
-.carte2 .nom_prix_note
-{
-    
-    justify-content: space-between;
-    margin-bottom: 10px;
 }
 
 
@@ -362,6 +376,7 @@ strong
 .act_col_1
 {
     width: 22%;
+    min-width: 302px;
 }
 .act_col_2_4
 {
@@ -369,10 +384,12 @@ strong
     flex-direction: column;
     justify-content: space-between;
     width: 22%;
+    min-width: 302px;
 }
 .act_col_3
 {
     width: 22%;
+    min-width: 302px;
 }
 .photos_activites
 {
@@ -446,8 +463,23 @@ footer
 
 
 
+@media screen and (max-width: 1440px)
+{
+    .les_hebergements
+    {
+        width: auto;
+    }
+    .les_plus_pop
+    {
+        width: auto;
+    }
+    .les_activites
+    {
+        width: auto;
+    }
+}
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 480px)
 {
     #header_sections
     {
@@ -464,14 +496,35 @@ footer
         margin-left: 10px;
         margin-right: 10px;
     }
-    .btn_nav
+    .logo_nav p
     {
-        display: flex;
-        flex-direction: row-reverse;
+        order: -2;
+    }
+    .logo_nav
+    {
+        justify-content: unset;
+        align-items: flex-start;
+    }
+    .btn_nav .btn_inscription
+    {
+        order: -1;
     }
     .btn_recherche
     {
         display: none;
+    }
+    .btn_loupe
+    {
+        display: block;
+        border-radius: 10px;
+        width: 50px;
+        border: none;
+        background: #0065FC;
+        margin-left: -5px;
+    }
+    .btn_loupe i
+    {
+        color: white;
     }
     .filtres
     {
@@ -506,12 +559,13 @@ footer
     {
         order: -1;
         border-radius: 0px;
+        width: auto;
+        min-width: 0;
     }
-    
     
     .les_hebergements
     {
-        width: auto; /* provisoire */
+        width: auto;
         background: none;
     }
     .cartes_des_hebergements
