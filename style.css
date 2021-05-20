@@ -54,13 +54,13 @@ nav
 }
 h1
 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: -10px;
 }
 h1 + p
 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .barre_de_recherche
 {
@@ -134,7 +134,7 @@ input
     border: solid #F2F2F2 2px;
     border-radius: 30px;
     padding-right: 15px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     height: 42px;
     text-decoration: none;
     color: black;
@@ -311,6 +311,10 @@ strong
     justify-content: space-between;
     align-items: baseline;
     margin-right: 9.52381%; /* 40px/420px */
+}
+.fa-chart-line
+{
+    font-size: 1.2em;
 }
 .photos_les_plus_pop
 {
@@ -560,12 +564,45 @@ footer
     {
         width: 33%;
     }
+    nav
+    {
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .btn_inscription
     {
         order: -1;
-        align-items: top;
+        align-self: flex-end;
+        margin-top: -65px;
     }
-
+    .btn_nav
+    {
+        display: flex;
+        align-items: baseline;
+        margin-top: 32px;
+        margin-left: -5%;
+        margin-right: -5%;
+    }
+    .btn_nav a
+    {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+    }
+    .btn_hebergements_activites
+    {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 32px;
+        color: #000000;
+    }
+    .btn_hebergements_activites:hover
+    {
+        border-top: 0px;
+        padding-top: 0px;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
     .filtres
     {
         display: flex;
@@ -589,6 +626,10 @@ footer
 /* Sections */
     
 
+    .les_plus_pop_icone
+    {
+        margin-left: 6%;
+    }
     .les_plus_pop h2, .les_hebergements h2, .les_activites h2
     {
         margin-left: 10px;
@@ -610,6 +651,10 @@ footer
     {
         width: auto;
         background: none;
+    }
+    .les_hebergements h2
+    {
+        margin-left: 32px;
     }
     .cartes_des_hebergements
     {
