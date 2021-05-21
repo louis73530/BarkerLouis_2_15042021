@@ -15,7 +15,7 @@
 
 .entete
 {
-    width: auto; /* provisoire */
+    width: auto;
     display: flex;
     flex-direction: column;
 }
@@ -75,7 +75,7 @@ h1 + p
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 50px;
-    height: 50px;
+    height: 50px;6+
 }
 .btn_recherche
 {
@@ -123,7 +123,7 @@ input
 {
     font-size: 1em;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 8px;
     margin-right: 5px;
     font-weight: bold;
 }
@@ -246,15 +246,15 @@ strong
 }
 .les_hebergements h2,.les_plus_pop h2
 {
-    margin-left: 40px; /* peut-etre a ajuster au cas par cas selon le conteneur */
+    margin-left: 40px;
 }
 .cartes_des_hebergements
 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 4.545455%; /* 40px/880px */ /* provisoire */
-    margin-right: 4.545455%; /* 40px/880px */ /* provisoire */
+    margin-left: 4.545455%; /* 40px/880px */
+    margin-right: 4.545455%; /* 40px/880px */
 }
 .carte
 {
@@ -318,7 +318,7 @@ strong
 }
 .photos_les_plus_pop
 {
-    margin: 5px 0px 5px 5px; /* provisoire */
+    margin: 5px 0px 5px 5px;
     min-width: 127px;
     width: 37.026239%; /* 127px/343px */
     height: 134px;
@@ -468,7 +468,7 @@ footer
 
 
 
-@media screen and (max-width: 1399.8px)
+@media screen and (max-width: 1440px)
 {
     .les_hebergements
     {
@@ -607,7 +607,7 @@ footer
     {
         display: flex;
         flex-direction: column;
-        align-items: baseline; /* provisoire */
+        align-items: baseline;
     }
     .les_btn_filtres
     {
@@ -630,7 +630,11 @@ footer
     {
         margin-left: 6%;
     }
-    .les_plus_pop h2, .les_hebergements h2, .les_activites h2
+    .les_plus_pop h2
+    {
+        margin-left: -10px;
+    }
+    #hebergements_a_marseille
     {
         margin-left: 10px;
     }
